@@ -1,0 +1,19 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+#rewritecond %{https_host} ^safetyandfire.co.za [nc]
+#rewriterule ^(.*)$ https://safetyandfire.co.za/$1 [r=301,nc]
+
+RewriteRule ^page/(.*).html$ content.php?Keyword=$1
+
+RewriteRule ^blogs/(.*).html$ blogs.php?Keyword=$1
+
+RewriteRule ^blog/(.*).html$ blog.php?Keyword=$1
+
+RewriteRule ^products/(.*).html$ products.php?Keyword=$1
+
+RewriteRule ^product/(.*).html$ product-detail.php?Keyword=$1
+
+RewriteRule ^order/(.*).html$ order-detail.php?Keyword=$1
+
+RewriteRule ^(.*).html$ $1.php
