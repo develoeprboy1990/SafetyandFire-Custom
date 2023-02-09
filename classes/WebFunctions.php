@@ -390,6 +390,7 @@ class WebFunctions extends DBMySql
 	function FilterString($Request)
 
 	{
+		$Data = array();
 
 		if(is_array($Request))
 

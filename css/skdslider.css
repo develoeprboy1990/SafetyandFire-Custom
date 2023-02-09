@@ -15,7 +15,7 @@
 .skdslider ul.slides{ margin:0; padding:0; list-style-type:none;}
 .skdslider ul.slides li
 {
-   /*display: none;*/
+   display: none;
 }
 .skdslider ul.slides li img{
     width: 100%;

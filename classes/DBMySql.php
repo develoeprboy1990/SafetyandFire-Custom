@@ -91,6 +91,7 @@ class DBMySql {
 
   /* public: perform a query */
   function query($Query_String) {
+    //echo $Query_String.'<br>';
     /* No empty queries, please, since PHP4 chokes on them. */
     if ($Query_String == "")
       /* The empty query string is passed on from the constructor,
@@ -104,18 +105,24 @@ class DBMySql {
     };
 
     # New query, discard previous result.
-    if ($this->Query_ID) {
+   /* if ($this->Query_ID) {
       $this->free();
-    }
+    }*/
+    
+    //echo 'hi'.'<br>';
 
     if ($this->Debug)
+    {
       printf("Debug: query = %s<br>\n", $Query_String);
+    }
 
     $this->Query_ID = @mysqli_query($this->Link_ID,$Query_String);
     $this->Row   = 0;
     $this->Errno = mysqli_errno($this->Link_ID);
     $this->Error = mysqli_error($this->Link_ID);
+
     if (!$this->Query_ID) {
+      ECHO 'ADSFADSF';EXIT;
       $this->halt("Invalid SQL: ".$Query_String);
     }
 

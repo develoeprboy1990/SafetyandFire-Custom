@@ -266,7 +266,8 @@ if(isset($_REQUEST['PageType']) && isset($_REQUEST['ID']) && $_REQUEST['PageType
 	  </tr>
 	<tr>
 	  <td align="left">Add in Best Sell</td>
-	  <td align="left"><table cellpadding="0" cellspacing="0" border="0">
+	  <td align="left">
+	  	<table cellpadding="0" cellspacing="0" border="0">
 	    <tr>
 	      <?php
             	foreach($ActiveInactive as $Key => $Value)
@@ -283,8 +284,9 @@ if(isset($_REQUEST['PageType']) && isset($_REQUEST['ID']) && $_REQUEST['PageType
             	}
             ?>
 	      </tr>
-	    </table></td>
-	  </tr>
+	    </table>
+	  </td>
+	</tr>
 	<tr>
 	  <td align="left">Active</td>
 	  <td align="left">
@@ -398,9 +400,10 @@ if(isset($_REQUEST['PageType']) && isset($_REQUEST['ID']) && $_REQUEST['PageType
 </table>
 </form>
 </div>
-<?php if($Content["TableID"]!='') { ?>
+<?php if($Content["TableID"]!='') { 
+	?>
 <script>
-LoadSubCategory('<?php echo $Content["ParentID"]; ?>', '<?php echo $Content["CategoryID"]; ?>');
+//LoadSubCategory('<?php echo $Content["ParentID"]; ?>', '<?php echo $Content["CategoryID"]; ?>');
 </script>
 <?php } ?>
 <script>
@@ -429,7 +432,7 @@ LoadSubCategory('<?php echo $Content["ParentID"]; ?>', '<?php echo $Content["Cat
 	$("#InLinkedProduct1").on("click", function () {
         $("#add_link_product").css('display','table-row');
      });
-	 	$("#InLinkedProduct0").on("click", function () {
+	$("#InLinkedProduct0").on("click", function () {
         $("#add_link_product").css('display','none');
      });
         

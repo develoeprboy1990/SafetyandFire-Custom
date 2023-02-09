@@ -62,6 +62,7 @@ else if($_REQUEST['ValidateSizeFlag']=='true')
 else if($_REQUEST['ValidateProductFlag']=='true')
 {
 	$Products = new products();
+	//print_r($_REQUEST);exit;
 	$Return = $Products->ManageProduct($_REQUEST);
 	$Web->Redirect(ADMIN_URL."index.php?page=products");
 }
