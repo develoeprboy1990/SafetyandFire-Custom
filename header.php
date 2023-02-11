@@ -53,7 +53,7 @@ $pC=0;
 while($Web->next_Record())
 {
 	$pC++;
-	$Link = WEB_URL."products/category/".$Web->f('UrlKeyword').".html";
+	$Link = WEB_URL."productss/category/".$Web->f('UrlKeyword').".html";
 	$pCategories[$pC] = array($Web->f('TableID'), $Web->f('Title'), $Link);
 }
 $TotalpCat=count($pCategories);
@@ -62,16 +62,19 @@ $TotalpCat=count($pCategories);
 	<div class="container">
     	<div class="fleft top-links">
         	<ul>
+        		<li><a href="<?php echo WEB_URL; ?>page/about-us.html">About Us</a></li>
         		<li><a href="<?php echo WEB_URL; ?>contact-us.html">Contact Us</a></li>
+        		<li><a href="<?php echo WEB_URL; ?>page/certification.html">Certification</a></li>
             </ul>
             <div class="clear"></div>
         </div>
-        <?php /*?><div class="fright top-links">
+        <?php ?><div class="fright top-links">
 			<ul>
-        	<li><a href="mailto:<?php echo $_SESSION[WEBSITE_SETTINGS][2]; ?>"><?php echo $_SESSION[WEBSITE_SETTINGS][2]; ?></a></li>
-             <li class="phone"><?php echo $_SESSION[WEBSITE_SETTINGS][1]; ?></li>
+        	<!-- <li><a href="mailto:<?php //echo $_SESSION[WEBSITE_SETTINGS][2]; ?>"><?php //echo $_SESSION[WEBSITE_SETTINGS][2]; ?></a></li>
+             <li class="phone"><?php echo $_SESSION[WEBSITE_SETTINGS][1]; ?></li> -->
+             <li class="phone"><a href="tel:<?php echo $_SESSION[WEBSITE_SETTINGS][1]; ?>"><i class="fa fa-phone" aria-hidden="true" style="font-size:20px;color:white;"></i>&nbsp;&nbsp;<?php echo $_SESSION[WEBSITE_SETTINGS][1]; ?></a></li>
             </ul>
-        </div><?php */?>
+        </div><?php?>
         <div class="clear"></div>
     </div>
 </section>

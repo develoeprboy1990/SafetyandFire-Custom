@@ -1,18 +1,13 @@
 <?php
 include_once("classes/config.php");
-
-$MetaTitle = 'LP Air Con Online Store';
+//echo $_REQUEST['Keyword'];exit;
+$MetaTitle = $_SESSION[WEBSITE_SETTINGS][6];
 
 include_once("html_header.php");
 
 include_once("header.php");
 
-
-
 //$CheckCategory = explode("/", $Keyword);
-
-
-
 $CheckCategory = explode("/", $_REQUEST['Keyword']);
 
 
@@ -109,7 +104,7 @@ else if($CheckCategory[0]=='search')
 
 {
 
-	$PageTitle = 'Product Search Results for &ldquo;'.$pKeyword.'&rdquo;';
+	$PageTitle = 'Product Search Results for &ldquo;'.$CheckCategory[1].'&rdquo;';
 
 	$Query = "select TableID, Title, Price, Image, UrlKeyword 
 
@@ -117,7 +112,7 @@ else if($CheckCategory[0]=='search')
 
 	where Status='".ACTIVE."' and 
 
-	(Title like '%$pKeyword%' or ShortDesc like '%$pKeyword%' or Description like '%$pKeyword%') 
+	(Title like '%$CheckCategory[1]%' or ShortDesc like '%$CheckCategory[1]%' or Description like '%$CheckCategory[1]%') 
 
 	order by Sequence asc";
 
@@ -142,8 +137,6 @@ $Web->query($Query);
 $total_records = $Web->num_rows();
 
 $total_groups = ceil($total_records/PRODUCT_ITEM_PER_GROUP);
-
-
 
 if($PageTitle=='' || $PageTitle==' / ')
 

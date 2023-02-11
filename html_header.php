@@ -29,6 +29,7 @@
 <link rel="stylesheet" type="text/css" href="<?php echo CSS_PATH; ?>responsive-table.css?v=<?php echo VERSION; ?>" />
 <link rel="stylesheet" type="text/css" href="<?php echo CSS_PATH; ?>jquery.datetimepicker.css?v=<?php echo VERSION; ?>" />
 <link rel="stylesheet" type="text/css" href="<?php echo CSS_PATH; ?>style.css?v=<?php echo VERSION; ?>2" />
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 <!--[if lt IE 9]>
 <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
 <![endif]-->

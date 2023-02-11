@@ -153,7 +153,7 @@ $Stock=10;
 				?>
                 <li class="size-box">
                     <table border="1" style="width:100%;">
-                    <thead><tr><th>Lable</th><th>Value</th></tr></thead>
+                    <thead><tr><th>Label</th><th>Value</th></tr></thead>
                     <tbody>
                         <?php while($Web->next_Record()) { ?>
                         <tr><td><?php echo $Web->f('label'); ?></td><td><?php echo $Web->f('value'); ?></td></tr>

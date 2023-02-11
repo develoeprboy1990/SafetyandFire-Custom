@@ -10,7 +10,7 @@ RewriteRule ^blogs/(.*).html$ blogs.php?Keyword=$1
 
 RewriteRule ^blog/(.*).html$ blog.php?Keyword=$1
 
-RewriteRule ^products/(.*).html$ products.php?Keyword=$1
+RewriteRule ^productss/(.*).html$ products.php?Keyword=$1
 
 RewriteRule ^product/(.*).html$ product-detail.php?Keyword=$1
 
