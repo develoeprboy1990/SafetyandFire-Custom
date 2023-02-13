@@ -5,7 +5,7 @@ define("ROOT_PATH", dirname(dirname(__FILE__))."/");
 if(preg_match('/localhost/',$_SERVER['HTTP_HOST']))
 {
 
-	define("WEB_URL", "http://localhost/ahsan/safetyandfire/");
+	define("WEB_URL", "http://localhost/safetyandfire/");
 	define("ADMIN_URL", WEB_URL."admin/");
 	define("DATABASE_NAME","safandfieq_db1");
 	define("DATABASE_USER","root");
