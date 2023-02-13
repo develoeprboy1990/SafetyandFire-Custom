@@ -561,7 +561,7 @@ class products extends WebFunctions
 			echo '<ul>';
 			while($this->next_Record())
 			{
-				$Link = WEB_URL."products/sub-category/".$this->f('UrlKeyword').".html";
+				$Link = WEB_URL."productss/sub-category/".$this->f('UrlKeyword').".html";
 				$Title = $this->f('Title');
 				echo '<li><a class="tooltip" title="'.$Title.'" href="'.$Link.'">'.$this->SubStrT($Title, 25).'</a>';
 			}

@@ -14,9 +14,9 @@ include_once("banner.php");
 
 <div class="container">
 
-<?php include_once("left_categories.php"); ?>
+<?php //include_once("left_categories.php"); ?>
 
-<aside class="fleft page-content">
+<!-- <aside class="fleft page-content"> -->
 
 <section class="products-listing">
 
@@ -56,7 +56,7 @@ include_once("banner.php");
 
 </section>
 
-</aside>
+<!-- </aside> -->
 
 <div class="clear"></div>
 

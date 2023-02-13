@@ -4,7 +4,7 @@
     <ul id="menu">
     <?php
 		foreach($pCategories as $pCategory)
-		{
+		{ //echo $pCategory[2];exit;
 	?>
     	<li><a href="<?php echo $pCategory[2]; ?>"><?php echo $pCategory[1]; ?></a><?php echo $Products->ProductSubCategories($pCategory[0]); ?></li>
     <?php

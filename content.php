@@ -2,7 +2,6 @@
 include_once("classes/config.php");
 if(isset($_REQUEST['Keyword']))
 {
-	
 	$Content			= $Web->getRecord($_REQUEST['Keyword'], 'UrlKeyword', 'content');
 	$MetaTitle			= $Content['Title'];
 	$pageDescription	= $Web->FilterDescription($Content['Content']);

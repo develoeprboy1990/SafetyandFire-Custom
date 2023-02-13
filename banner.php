@@ -13,7 +13,7 @@ if($Web->num_rows()>0)
 			if($Web->f('TitleOne')!='' && $Web->f('TitleTwo')!='')
 			{
 				$CatUrl = $Web2->getFieldData('UrlKeyword', 'TableID', $Web->f('TitleOne'), 'p_category');
-				$BannerLink=WEB_URL.'products/'.$Web->f('TitleTwo').'/'.$CatUrl.'.html';
+				$BannerLink=WEB_URL.'productss/'.$Web->f('TitleTwo').'/'.$CatUrl.'.html';
 	?>
     <li><a href="<?php echo $BannerLink; ?>"><img src="<?php echo $ImagePath; ?>" alt="" /></a></li>
     <?php			
