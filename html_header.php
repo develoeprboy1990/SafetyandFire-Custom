@@ -7,10 +7,7 @@
 <!--<![endif]-->
 <head>
 <meta charset="utf-8" />
-<meta name="description" content="LP Air Conditioning are specialists in the installation, servicing and maintenance of air conditioning systems within commercial and residential premises">
-<meta name="keywords" content="Heating, Ventilating , Air Conditioning Service">
-
-   <meta name="Description"
+   <meta name="description"
           content="Safety and Fire. We are an SABS approved fire equipment  wholesale distributor and servicing specialist of fire extinguishers, fire hose reels, fire hydrants, fire hoses and fire fighting accessories, the refilling of carbon dioxide extinguishers and hydrostatic testing of cylinders.">
     <meta name="keywords"
           content="Safety and Fire, fire safety equipment, extinguishers, hose reels, couplings, nozzles, fire blankets, hydrants, valves, Witbank, SABS Certification, Emalahleni, Mpumalanga, Witbank">
