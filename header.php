@@ -1,63 +1,64 @@
 <?php
-$Facebook_Link	= $_SESSION[WEBSITE_SETTINGS][3];
-$Facebook_Target=' target="_blank"';
-if($Facebook_Link=='')
-{
-	$Facebook_Link='#';
-	$Facebook_Target='';
-}
+	$Facebook_Link	= $_SESSION[WEBSITE_SETTINGS][3];
+	$Facebook_Target=' target="_blank"';
+	if($Facebook_Link=='')
+	{
+		$Facebook_Link='#';
+		$Facebook_Target='';
+	}
 
-$Twitter_Link	= $_SESSION[WEBSITE_SETTINGS][4];
-$Twitter_Target=' target="_blank"';
-if($Twitter_Link=='')
-{
-	$Twitter_Link='#';
-	$Twitter_Target='';
-}
+	$Twitter_Link	= $_SESSION[WEBSITE_SETTINGS][4];
+	$Twitter_Target=' target="_blank"';
+	if($Twitter_Link=='')
+	{
+		$Twitter_Link='#';
+		$Twitter_Target='';
+	}
 
-$Google_Link	= $_SESSION[WEBSITE_SETTINGS][5];
-$Google_Target=' target="_blank"';
-if($Google_Link=='')
-{
-	$Google_Link='#';
-	$Google_Target='';
-}
+	$Google_Link	= $_SESSION[WEBSITE_SETTINGS][5];
+	$Google_Target=' target="_blank"';
+	if($Google_Link=='')
+	{
+		$Google_Link='#';
+		$Google_Target='';
+	}
 
-$Pinterest_Link	= $_SESSION[WEBSITE_SETTINGS][9];
-$Pinterest_Target=' target="_blank"';
-if($Pinterest_Link=='')
-{
-	$Pinterest_Link='#';
-	$Pinterest_Target='';
-}
+	$Pinterest_Link	= $_SESSION[WEBSITE_SETTINGS][9];
+	$Pinterest_Target=' target="_blank"';
+	if($Pinterest_Link=='')
+	{
+		$Pinterest_Link='#';
+		$Pinterest_Target='';
+	}
 
-$Instagram_Link	= $_SESSION[WEBSITE_SETTINGS][10];
-$Instagram_Target=' target="_blank"';
-if($Instagram_Link=='')
-{
-	$Instagram_Link='#';
-	$Instagram_Target='';
-}
+	$Instagram_Link	= $_SESSION[WEBSITE_SETTINGS][10];
+	$Instagram_Target=' target="_blank"';
+	if($Instagram_Link=='')
+	{
+		$Instagram_Link='#';
+		$Instagram_Target='';
+	}
 
-$Linkedin_Link	= $_SESSION[WEBSITE_SETTINGS][11];
-$Linkedin_Target=' target="_blank"';
-if($Linkedin_Link=='')
-{
-	$Linkedin_Link='#';
-	$Linkedin_Target='';
-}
+	$Linkedin_Link	= $_SESSION[WEBSITE_SETTINGS][11];
+	$Linkedin_Target=' target="_blank"';
+	if($Linkedin_Link=='')
+	{
+		$Linkedin_Link='#';
+		$Linkedin_Target='';
+	}
 
-$CountCart = $Products->CountCart();
-$Web->query("select * from p_category where Status='".ACTIVE."' and ParentID=0 order by Sequence asc");
-$pC=0;
-while($Web->next_Record())
-{
-	$pC++;
-	$Link = WEB_URL."productss/category/".$Web->f('UrlKeyword').".html";
-	$pCategories[$pC] = array($Web->f('TableID'), $Web->f('Title'), $Link);
-}
-$TotalpCat=count($pCategories);
+	$CountCart = $Products->CountCart();
+	$Web->query("select * from p_category where Status='".ACTIVE."' and ParentID=0 order by Sequence asc");
+	$pC=0;
+	while($Web->next_Record())
+	{
+		$pC++;
+		$Link = WEB_URL."productss/category/".$Web->f('UrlKeyword').".html";
+		$pCategories[$pC] = array($Web->f('TableID'), $Web->f('Title'), $Link);
+	}
+	$TotalpCat=count($pCategories);
 ?>
+
 <section class="top-header">
 	<div class="container">
     	<div class="fleft top-links">
