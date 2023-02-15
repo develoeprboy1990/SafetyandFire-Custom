@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<<<<<<< HEAD
     <html class='no-js' lang='en'>
     <head>
         <meta charset="utf-8" />
@@ -21,24 +20,6 @@
         <link rel="stylesheet" type="text/css" href="<?php echo CSS_PATH; ?>jquery.datetimepicker.css?v=<?php echo VERSION; ?>" />
         <link rel="stylesheet" type="text/css" href="<?php echo CSS_PATH; ?>style.css?v=<?php echo VERSION; ?>2" />
         <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-=======
-<!--[if lt IE 7]> <html lang="en" class="no-js ie6"> <![endif]-->
-<!--[if IE 7]>    <html lang="en" class="no-js ie7"> <![endif]-->
-<!--[if IE 8]>    <html lang="en" class="no-js ie8"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class='no-js' lang='en'>
-<!--<![endif]-->
-<head>
-<meta charset="utf-8" />
-   <meta name="description"
-          content="Safety and Fire. We are an SABS approved fire equipment  wholesale distributor and servicing specialist of fire extinguishers, fire hose reels, fire hydrants, fire hoses and fire fighting accessories, the refilling of carbon dioxide extinguishers and hydrostatic testing of cylinders.">
-    <meta name="keywords"
-          content="Safety and Fire, fire safety equipment, extinguishers, hose reels, couplings, nozzles, fire blankets, hydrants, valves, Witbank, SABS Certification, Emalahleni, Mpumalanga, Witbank">
-<meta name="author" content="Safety and Fire Safty Store">
-<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no">
-<!--<title><?#php echo $MetaTitle ?></title>-->
-<title><?php echo $MetaTitle; ?></title>
->>>>>>> 4af43cab3cf861753f9fce78be4ce7ecdb30e353
 
         <script src="<?php echo JS_PATH; ?>jquery.js?v=<?php echo VERSION; ?>"></script>
         <script src="<?php echo JS_PATH; ?>fbconnect.js?v=<?php echo VERSION; ?>"></script>
