@@ -1,58 +1,47 @@
 <footer>
-    <div class="container">
-        <div class="fleft footer-box">
-            <h2><a href="#">GiftsWalla</a></h2>
-            <ul>
-                <li><a href="<?php echo WEB_URL; ?>page/about-us.html">About Us</a></li>
-                <li><a href="<?php echo WEB_URL; ?>page/terms-and-conditions.html">Terms &amp; Conditions</a></li>
-                <li><a href="<?php echo WEB_URL; ?>page/privacy-policy.html">Privacy Policy</a></li>
-                <li><a href="<?php echo WEB_URL; ?>contact-us.html">Contact Us</a></li>
-            </ul>
+    <div class="footer-container">
+        <div class="footer-info">
+            <div class="left-info">
+                <div class="footer-logo">
+                    <a href="http://safetyandfire.co.za/">
+                        <img src="./images/logo.png" width="400" height="120"/>
+                    </a>
+                </div>
+                <p class="footer-para">The Quick and Easy Contact Form goes directly to an attended mailbox. 
+                Safequip strives to always be an asset to all our clients. 
+                We would like to thank you for your enquiry and continuous support.</p>
+            </div>
+            <div class="right-info">
+                <h2>We would love to hear from you!</h2>
+                <div class="contact-info">
+                    <form action="">
+                        <div class="input-box">
+                            <input type="text" name="" required="required" />
+                            <span>Your Name</span>
+                        </div>
+                        <div class="input-box">
+                            <input type="text" name="" required="required" />
+                            <span>Email Address</span>
+                        </div>
+                        <div class="input-box">
+                            <textarea required="required"></textarea>
+                            <span>Type Message</span>
+                        </div>
+                        <div class="input-box">
+                            <input type="submit" name="" value="Send Message" />
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-        <div class="fleft footer-box footer-my-account">
-            <h2>My Account</h2>
-            <ul>
-            <?php if(isset($_SESSION[WEB_USER_SESSION])) { ?>
-            <li><a href="<?php echo WEB_URL; ?>my-orders.html">My Orders</a></li>
-            <li><a href="<?php echo WEB_URL; ?>change-password.html">Change Password</a></li>
-            <?php } else { ?>
-                <li><a href="<?php echo WEB_URL; ?>login.html">Login</a></li>
-                <li><a href="<?php echo WEB_URL; ?>register.html">Register</a></li>
-            <?php } ?>    
-                <li><a href="<?php echo WEB_URL; ?>my-cart.html">Checkout</a></li>
-            </ul>
+
+        <!-- Copyrith Info -->
+        <div class="copyright-info">
+            <div class="copyright-text">Copyright &copy; 2023 Safety and Fire. All Rights Reserved.</div>
+            <div class="compnay-details">
+                <a href="https://precisecodes.com/" title="Precise Codes" target="_blank">Web Design by Precise Codes</a>
+            </div>
         </div>
-        <div class="fleft footer-box footer-join-us">
-            <h2>Join Us</h2>
-            <ul>
-                <li>
-                    <div class="social-media">
-                        <ul>
-                            <li><a href="<?php echo $Facebook_Link; ?>"<?php echo $Facebook_Target; ?> class="facebook"></a></li>
-                            <li><a href="<?php echo $Twitter_Link; ?>"<?php echo $Twitter_Target; ?> class="twitter"></a></li>
-                            <li><a href="<?php echo $Pinterest_Link; ?>"<?php echo $Pinterest_Target; ?> class="pinterest"></a></li>
-                            <li><a href="<?php echo $Instagram_Link; ?>"<?php echo $Instagram_Target; ?> class="instagram"></a></li>
-                            <li><a href="<?php echo $Linkedin_Link; ?>"<?php echo $Linkedin_Target; ?> class="linkedin"></a></li>
-                        </ul>
-                        <div class="clear"></div>
-                    </div>
-                </li>
-                <li><a href="mailto:<?php echo $_SESSION[WEBSITE_SETTINGS][2]; ?>"><?php echo $_SESSION[WEBSITE_SETTINGS][2]; ?></a></li>
-                <li class="phone"><?php echo $_SESSION[WEBSITE_SETTINGS][1]; ?></li>
-            </ul>
-        </div>
-        <div class="fleft footer-box">
-            <h2>We Accept</h2>
-            <img src="images/payment.png" alt="" class="payment" />
-        </div>
-        <div class="clear"></div>
     </div>
-    <section class="copyright">
-    <div class="container">
-        <div class="fleft">&copy; copyright 2023. All rights reserved</div>
-        <div class="fright"><a href="http://acubedsystems.co.za/" title="Sanam Web Design" target="_blank">Web Design</a> by <a href="http://acubedsystems.co.za/" title="Digital Management Systems" target="_blank">Digital Management Systems</a></div>
-        <div class="clear"></div>
-    </div>
-    </section>
 </footer>
 <div class="notification">You are already subscribed with us!</div>
