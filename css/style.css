@@ -806,9 +806,9 @@ margin-left:20px;
 
 }
 
-.cart-quantity {
+/* .cart-quantity {
 
-}
+} */
 
 .cart-quantity li {
 
@@ -1489,7 +1489,7 @@ display: block;
 
 		left:-1000px;
 
-		backgroun:#ccc;
+		background:#ccc;
 
 		
 
@@ -1614,31 +1614,19 @@ display: block;
 	}
 
 	.cart-btns {
-
 		margin-bottom:20px;
-
 	}
 
 	.cart-btns input.Button {
-
 		display:block;
-
 		margin:0px;
-
 	}
 
 	/*
-
 	.no-margin .container {
-
 		padding-top:20px;
-
 	}
-
 	*/
-
-
-}
 
 @media all and (min-width: 768px) and (max-width: 998px) {
 
