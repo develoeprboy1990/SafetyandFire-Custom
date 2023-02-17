@@ -21,6 +21,9 @@
         <link rel="stylesheet" type="text/css" href="<?php echo CSS_PATH; ?>style.css?v=<?php echo VERSION; ?>2" />
         <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 
+        <!-- CDN for Menu Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
         <script src="<?php echo JS_PATH; ?>jquery.js?v=<?php echo VERSION; ?>"></script>
         <script src="<?php echo JS_PATH; ?>fbconnect.js?v=<?php echo VERSION; ?>"></script>
         <link rel="icon" type="image/png" href="<?php echo WEB_URL; ?>images/favico.png" />
