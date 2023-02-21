@@ -100,81 +100,108 @@
 </section> -->
 
 <!-- Main Menu by RJ -->
-<div class="topnav" id="myTopnav">
-	<div class="logo-rj">
-		<a href=""><img src="./images/logo.png" width="260" height="80"/></a>
-	</div>
-	<div class="navbar">
-		<a href="#" class="home active-rj">Home</a>
-		<div>
-			<div class="dropdown-rj">
-				<button class="dropbtn">Extinguishers 
-					<i class="fa-solid fa-angle-down"></i>
-				</button>
-				<div class="dropdown-content">
-					<a href="#">DCP Extinguishers</a>
-					<a href="#">Co2 Extinguishers</a>
-					<a href="#">Mobile Extinguishers</a>
-					<a href="#">Co2 Extinguisher Spares & Accfont-sizeessories</a>
-					<a href="#">DCP Extinguisher Spares & Accessories</a>
-				</div>
+<section>
+	<header>
+		<nav>
+			<div class="logo">
+				<a href="#">
+					<img src="./images/logo.png" alt="Safety and Fire" width="300" height="90"/>
+				</a>
 			</div>
-			<div class="dropdown-rj">
-				<button class="dropbtn">Hose Reels 
-					<i class="fa-solid fa-angle-down"></i>
-				</button>
-				<div class="dropdown-content">
-					<a href="#">Fire Hose Reels</a>
-					<a href="#">Fire Hose Reel Spares</a>
-				</div>
-			</div>
-			<div class="dropdown-rj">
-				<button class="dropbtn">Hydrants 
-					<i class="fa-solid fa-angle-down"></i>
-				</button>
-				<div class="dropdown-content">
-					<a href="#">Hydrants and Accessories</a>
-					<a href="#">Layflats Hose, Nozzles and Couplings</a>
-				</div>
-			</div>
-			<div class="dropdown-rj">
-				<button class="dropbtn">Brackets and Cabinets 
-					<i class="fa-solid fa-angle-down"></i>
-				</button>
-				<div class="dropdown-content">
-					<a href="#">Brackets</a>
-					<a href="#">Cabinets and Covers</a>
-				</div>
-			</div>
-			<div class="dropdown-rj">
-				<button class="dropbtn">General Accessories
-					<i class="fa-solid fa-angle-down"></i>
-				</button>
-				<div class="dropdown-content">
-					<a href="#">Fire Blankets</a>
-					<a href="#">Ring Gauges and General Accessories</a>
-					<a href="#">Alarm Station</a>
-					<a href="#">Dry Chemical Powder</a>
-					<a href="#">Signs and Labels</a>
-				</div>
-			</div>
+			<ul class="nav-menu">
+				<li><a href="#" class="active">Home</a></li>
+				<li>
+					<a href="javascript:void(0)" class="nav-link active">
+						<label for="droplist1" class="toggle">
+							Extinguishers <i class="fa-solid fa-angle-down"></i>
+						</label>
+					</a>
+					<input type="checkbox" id="droplist1" />
+					<ul class="sub">
+						<li><a href="#">DCP Extinguishers</a></li>
+						<li><a href="#">Co2 Extinguishers</a></li>
+						<li><a href="#">Mobile Extinguishers</a></li>
+						<li><a href="#">Co2 Extinguisher Spares & Accessories</a></li>
+						<li><a href="#">DCP Extinguisher Spares & Accessories</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:void(0)" class="nav-link">
+						<label for="droplist2" class="toggle">
+							Hose Reels <i class="fa-solid fa-angle-down"></i>
+						</label>
+					</a>
+					<input type="checkbox" id="droplist2" />
+					<ul class="sub">
+						<li><a href="#">Fire Hose Reels</a></li>
+						<li><a href="#">Fire Hose Reel Spares</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:void(0)" class="nav-link">
+						<label for="droplist3" class="toggle">
+							Hydrants <i class="fa-solid fa-angle-down"></i>
+						</label>
+					</a>
+					<input type="checkbox" id="droplist3" />
+					<ul class="sub">
+						<li><a href="#">Hydrants and Accessories</a></li>
+						<li><a href="#">Layflats Hose, Nozzles and Couplings</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:void(0)" class="nav-link">
+						<label for="droplist4" class="toggle">
+							Brackets and Cabinets <i class="fa-solid fa-angle-down"></i>
+						</label>
+					</a>
+					<input type="checkbox" id="droplist4" />
+					<ul class="sub">
+						<li><a href="#">Brackets</a></li>
+						<li><a href="#">Cabinets and Covers</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:void(0)" class="nav-link">
+						<label for="droplist5" class="toggle">
+							General Accessories <i class="fa-solid fa-angle-down"></i>
+						</label>
+					</a>
+					<input type="checkbox" id="droplist5" />
+					<ul class="sub">
+						<li><a href="#">Fire Blankets</a></li>
+						<li><a href="#">Ring Gauges and General Accessories</a></li>
+						<li><a href="#">Alarm Station</a></li>
+						<li><a href="#">Dry Chemical Powder</a></li>
+						<li><a href="#">Signs and Labels</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</header>
+</section>
+
+<!-- Navbar Button -->
+<div class="hamburger-container">
+	<div class="menu-toggle">
+		<div class="hamburger">
+			<span class="bar"></span>
+			<span class="bar"></span>
+			<span class="bar"></span>
 		</div>
-	</div>
-	<div class="btn">
-		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-			&#9776;
-		</a>
 	</div>
 </div>
 
 <!-- JavaScript -->
 <script>
-	function myFunction() {
-		var x = document.getElementById("myTopnav");
-		if (x.className === "topnav") {
-			x.className += " responsive";
-		} else {
-			x.className = "topnav";
-		}
+	// Setup hamburger menu
+	{
+		const menu_toggle = document.querySelector(".menu-toggle");
+		const sidebar = document.querySelector(".nav-menu");
+
+		menu_toggle.addEventListener("click", () => {
+			menu_toggle.classList.toggle("active");
+			sidebar.classList.toggle("active");
+		});
 	}
 </script>
