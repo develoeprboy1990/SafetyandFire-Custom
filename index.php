@@ -8,8 +8,10 @@
 
 <section class="main-content">
 	<div class="container">
-		<?php //include_once("left_categories.php"); ?>
-		<!-- <aside class="fleft page-content"> -->
+		<!-- Left Sidebar -->
+		<?php include_once("left_categories.php"); ?>
+
+		<!-- Main Conetent -->
 		<section class="products-listing">
 			<div class="heading"><h2>Featured Products</h2></div>
 			<?php
