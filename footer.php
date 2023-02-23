@@ -3,8 +3,8 @@
         <div class="footer-info">
             <div class="left-info">
                 <div class="footer-logo">
-                    <a href="http://safetyandfire.co.za/">
-                        <img src="./images/logo.png" width="400" height="120"/>
+                    <a href="<?php echo WEB_URL; ?>">
+                        <img src="<?php echo IMAGES_PATH; ?>logo.png" width="400" height="120"/>
                     </a>
                 </div>
                 <p class="footer-para">The Quick and Easy Contact Form goes directly to an attended mailbox. 
