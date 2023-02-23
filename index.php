@@ -9,11 +9,11 @@
 <section class="main-content">
 	<div class="container">
 		<!-- Left Sidebar -->
-		<?php include_once("left_categories.php"); ?>
+		<!-- Removed -->
 
-		<!-- Main Conetent -->
+		<!-- Main Content -->
 		<section class="products-listing">
-			<div class="heading"><h2>Featured Products</h2></div>
+			<div class="heading-rj"><h2>Featured Products</h2></div>
 			<?php
 				$Query = "select TableID, Title, Price, Image, UrlKeyword 
 				from products  
@@ -25,7 +25,7 @@
 		</section>
 
 		<section class="products-listing">
-			<div class="heading"><h2>Best Seller</h2></div>
+			<div class="heading-rj"><h2>Best Sellings</h2></div>
 			<?php
 				$Query = "select TableID, Title, Price, Image, UrlKeyword 
 				from products  
@@ -35,7 +35,6 @@
 				$Products->ShowProducts($Query);
 			?>
 		</section>
-		<!-- </aside> -->
 		<div class="clear"></div>
 	</div>
 </section>
