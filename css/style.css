@@ -43,12 +43,6 @@ h1, h2, h3, h4, p, form, ul, li {
 
 .clear  { clear:both; }
 
-.container {
-	width: 1200px;
-	margin: 0 auto;
-	position:relative;
-}
-
 a {
 
 	cursor:pointer;
@@ -221,7 +215,8 @@ a {
 	background-color: #262626;
 }
 
-/* Main Menu CSS By Rj */
+/* CSS By RJ */
+/* Main Menu CSS */
 /* !BASE RESET */
 header {
     width: 100%;
@@ -264,7 +259,7 @@ header nav {
 
 .nav-menu li a {
     display: block;
-    color: #1f1f1f;
+    color: #181313;
     text-decoration: none;
     position: relative;
     padding: 12px 0 12px 16px;
@@ -295,7 +290,7 @@ header nav {
 }
 
 .nav-menu li ul li a {
-    color: #381d1d;
+    color: #181313;
     padding: 10px 8px;
     display: block;
     transition: all 0.3s;
@@ -305,9 +300,12 @@ header nav {
     -o-transition: all 0.3s;
 }
 
-.nav-menu li ul li a:hover,
-.nav-menu li a:hover,
 .active {
+	color: #f09a20;
+}
+
+.nav-menu li ul li a:hover,
+.nav-menu li a:hover {
     color: #f09a20;
 }
 
@@ -492,39 +490,34 @@ header nav {
 
 }
 
-/* Sidebar */
-/* ul {
+/* Side Menu */
+ul {
     list-style: none;
 }
   
 a {
     text-decoration: none;
 }
-  
-h2 {
-    text-align: center;
-    margin: 20px auto;
-    color: #fff;
-}
 
-.accordion-menu {
-    width: 30%;
+.side-menu-rj {
+	float: left;
+	width: 30%;
     height: 100vh;
     background: #f6f6f6;
 }
 
-.accordion-menu li.open .dropdownlink {
+.accordion-menu-rj li.open .dropdownlink-rj {
     color: #f09a20;
 }
 
-.accordion-menu li:last-child .dropdownlink {
+.accordion-menu-rj li:last-child .dropdownlink-rj {
     border-bottom: 0;
 }
 
-.dropdownlink {
+.dropdownlink-rj {
     cursor: pointer;
     display: block;
-    padding: 15px 15px 15px 45px;
+    padding: 15px;
     font-size: 18px;
     border-bottom: 1px solid #ccc;
     color: #212121;
@@ -532,10 +525,10 @@ h2 {
     transition: all 0.4s ease-out;
 }
 
-i {
-    position: absolute;
+.dropdownlink-rj .fa-chevron-down {
+	position: absolute;
     top: 17px;
-    left: 16px;
+    right: 15px;
 }
 
 .fa-chevron-down {
@@ -543,17 +536,17 @@ i {
     left: auto;
 }
 
-.submenuItems {
+.submenuItems-rj {
     display: none;
     background: #fee0b749;
     
 }
 
-li:not(:last-child) {
+.submenuItems-rj li:not(:last-child) {
     border-bottom: 1px solid #dcdada;
 }
 
-.submenuItems a {
+.submenuItems-rj a {
     display: block;
     color: #181818;
     padding: 12px 12px 12px 45px;
@@ -561,12 +554,100 @@ li:not(:last-child) {
 }
 
 @media (max-width: 648px) {
-    .accordion-menu {
+    .accordion-menu-rj {
         display: none;
     }
-} */
+}
 
-/* End BY RJ */
+/* Search Box */
+.container-rj {
+    padding: 25px 0 0 0;
+    height: 100px;
+    background-color: #f6f6f6;
+    border-bottom: 2px solid #dcdcdc;
+}
+
+.wrapper-rj {
+    margin: 0 auto;
+    border-radius: 30px;
+    box-shadow: 0px 2px 10px 1px rgb(0 0 0 / 15%);
+    position: relative;
+    width: 330px;
+}
+
+.wrapper-rj input {
+    width: 100%;
+    border: none;
+    height: 50px;
+    border-radius: 30px;
+    padding: 0px 40px 0px 14px;
+    font-size: 18px;
+}
+
+.wrapper-rj input:focus {
+    outline: none;
+}
+
+button {
+    position: absolute;
+    border: none;
+    background-color: #e08c15;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    top: 0;
+    right: 0;
+    height: 50px;
+    line-height: 50px;
+    padding: 0;
+    width: 56px;
+}
+
+button:hover {
+    background-color: #d3810f;
+}
+
+button:focus {
+  outline: none;
+}
+
+button .fa-search {
+    width: 100%;
+    color: #ffffff;
+    font-size: 18px;
+    padding-top: 16px;
+}
+
+.results-rj {
+  padding: 0px;
+}
+
+.results-rj ul {
+    margin: 0; padding: 0; 
+}
+
+.results-rj ul li {
+  list-style: none;
+  border-radius: 3px;
+  opacity: 0;
+  display: none;
+  padding: 8px 12px;
+  transition: all .5s linear;
+}
+
+.show-j .results-rj ul li {
+  opacity: 1;
+  display: block;
+}
+
+.show-j .results-rj {
+  padding: 10px;
+}
+
+.results-rj ul li:hover {
+  background: #ececec
+}
+
+/* CSS End BY RJ */
 
 .main-categories ul li {
 	float: left;
@@ -679,163 +760,128 @@ li:not(:last-child) {
 }
 
 .main-categories ul li a:hover {
-
 	background-color:#f7941d;
-
 	color:#fff;
-
 }
 
 .categories-list {
-
 	width:279px;
-
 }
 
 .page-content {
-
 	width:921px;
-
 	border-left:1px dashed #f09a20;
-
 	padding-left:20px;
-
 }
 
 .categories-list, .page-content {
-
 	padding-bottom:30px;
-
 }
 
-.heading {
+/* =========== Category Page ============ */
+/* Main Container -- 
+It has two portions "side-menu-rj - 30%" and "main-rj - 70%" */
+.container {
+	width: 100%;
+	position:relative;
+}
+/* Side Menu */
+/* .side-menu-rj { ... } -- Below in RJ Portion*/
 
-	border-left:5px solid #f09a20;
-
-	background:url(../images/heading-bg.png?v=1) repeat-x center left;
-
-	margin:20px 0px;
-
+/* Products container */
+.main-rj {
+	width: 70%;
+    float: right;
+    position: relative;
 }
 
-/*
-
-.no-margin .heading {
-
-	margin:0px 0px 20px 0px;
-
+.heading-rj {
+	margin: 18px 0 12px 19px;
 }
 
-.no-margin .container {
+/* === HEADING STYLE === */
+.heading-rj h2 {
+	font-size: 28px;
+	font-weight: 500;
+	letter-spacing: 0;
+	line-height: 1.5em;
+	padding-bottom: 8px;
+	position: relative;
+}
+.heading-rj h2:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 5px;
+	width: 100px;
+	background-color: #f09a20;
+}
+.heading-rj h2:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 2px;
+	height: 1px;
+	width: 95%;
+	background-color: #f09a20;
+}
+/* === HEADING STYLE END === */
 
-	padding-top:20px;
-
+.listing ul li {
+	width: 260px;
+    height: 270px;
+    display: block;
+    float: left;
+    margin: 0 0 10PX 20PX;
+    cursor: pointer;
 }
 
-*/
-
-.heading h2 {
-
-	padding:0px 5px 0px 5px;
-
-	background:#fff;
-
-	font-size:28px;
-
-	display:inline-block;
-
-}
+/* End RJ CSS */
 
 .categories-list .heading {
-
 	background:none;
-
 }
 
 .next-prev li {
-
 	float:left;
-
 }
 
 .next-prev li a {
-
 	width:30px;
-
 	height:41px;
-
 	display:block;
-
 	background:url(../images/next-prev.png) no-repeat top left;
-
 }
 
 .next-prev li a.next {
-
 	background-position:-30px 0px;
-
-}
-
-.listing ul li {
-
-	width:260px;
-
-	height:270px;
-
-	display:block;
-
-	float:left;
-
-	margin:0px 20px;
-
-	cursor:pointer;
-
 }
 
 .subscription-box {
-
 	background:url(../images/subscription-box.png) repeat-x top left;
-
 	height:110px;
-
 	padding:30px 0px;
-
 }
 
 .subscription-box h2 {
-
 	font-size:30px;
-
 	color:#fff;
-
 	text-transform:uppercase;
-
 	font-weight:600;
-
 }
 
-input.TextField, .Textarea {/*.subscription-box input.TextField {*/
-
+input.TextField, .Textarea {
 	border:1px solid #ccc;
-
 	margin-bottom:10px;
-
 	background:#fff;
-
 	height:50px;
-
 	line-height:50px;
-
 	padding:0px 10px;
-
 	font-size:20px;
-
 	color:#000;
-
 	font-family:"Myriad Pro", Arial;
-
 	width:100%;
-
 }
 
 .Textarea {
