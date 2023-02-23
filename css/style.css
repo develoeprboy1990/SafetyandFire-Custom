@@ -1287,10 +1287,6 @@ margin-left:20px;
 
 }
 
-.cart-quantity {
-
-}
-
 .cart-quantity li {
 
 	display:inline-table;
@@ -1558,12 +1554,6 @@ margin-left:20px;
 	.heading h2 {
 
 		font-size:20px;
-
-	}
-
-	.header .fright {
-
-		/*display:none;*/
 
 	}
 
@@ -1843,7 +1833,7 @@ margin-left:20px;
 
 		left:-1000px;
 
-		backgroun:#ccc;
+		background:#ccc;
 
 		
 
