@@ -142,51 +142,37 @@ if($PageTitle=='' || $PageTitle==' / ')
 
 	$PageTitle='Products';
 
-	
-
 $_SESSION[USER_PRODUCTS_QUERY] = $Query;
 
 ?>
 
+<!-- Markup By RJ -->
 <section class="main-content inner-page">
-
-<div class="container">
-
-<?php include_once("left_categories.php"); ?>
-
-<aside class="fleft page-content">
-
-<section class="products-listing">
-
-    <div class="heading"><h2><?php echo $PageTitle; ?></h2></div>
-
-    <span id="ShowProducts"></span>
-
-    <div id="animation_image" style="display:none;" align="center"><img src="<?php echo IMAGES_PATH; ?>loading.gif" alt="" /></div>
-
-</section>
-
-</aside>
-
-<div class="clear"></div>
-
-</div>
-
+	<div class="container">
+		<?php include_once("left_categories.php"); ?>
+		<div class="main-rj">
+			<section class="products-listing">
+				<div class="heading-rj">
+					<h2><?php echo $PageTitle; ?></h2>
+				</div>
+				<span id="ShowProducts"></span>
+				<div id="animation_image" style="display:none; align-items:center">
+					<img src="<?php echo IMAGES_PATH; ?>loading.gif" alt="" />
+				</div>
+			</section>
+		</div>
+		<div class="clear"></div>
+	</div>
 </section>
 
 <?php
-
 	include_once("subscription.php");
-
 	include_once("footer.php");
-
 	include_once("html_footer.php");
-
 ?>
 
 <script>
-
-$(document).ready(function() {
+	$(document).ready(function() {
 
 	$('title').html('<?php echo $PageTitle; ?>');
 
