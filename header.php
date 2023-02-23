@@ -104,14 +104,14 @@
 	<header>
 		<nav>
 			<div class="logo">
-				<a href="#">
-					<img src="./images/logo.png" alt="Safety and Fire" width="300" height="90"/>
+				<a href="<?php echo WEB_URL; ?>">
+					<img src="<?php echo IMAGES_PATH; ?>logo.png" alt="Safety and Fire" width="300" height="90"/>
 				</a>
 			</div>
 			<ul class="nav-menu">
-				<li><a href="#" class="active">Home</a></li>
+				<li><a href="<?php echo WEB_URL; ?>" class="active">Home</a></li>
 				<li>
-					<a href="javascript:void(0)" class="nav-link active">
+					<a href="javascript:void(0)" class="nav-link">
 						<label for="droplist1" class="toggle">
 							Extinguishers <i class="fa-solid fa-angle-down"></i>
 						</label>
