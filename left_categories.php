@@ -100,6 +100,9 @@
 	</ul>
 </aside>
 
+
+
+
 <!-- JavaScript -->
 <script>
 	// Side Menu Js
@@ -115,7 +118,7 @@
     
     	Accordion.prototype.dropdown = function(e) {
       		var $el = e.data.el,
-         	 this = $(this),
+         	 $this = $(this),
           	//this is the ul.submenuItems
           	$next = $this.next();
       
