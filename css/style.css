@@ -572,7 +572,7 @@ a {
     border-radius: 30px;
     box-shadow: 0px 2px 10px 1px rgb(0 0 0 / 15%);
     position: relative;
-    width: 330px;
+    width: 92%;
 }
 
 .wrapper-rj input {
@@ -645,6 +645,15 @@ button .fa-search {
 
 .results-rj ul li:hover {
   background: #ececec
+}
+/* Search Box Responsiveness */
+@media (max-width: 650px) {
+	.side-menu-rj {
+		display: none;
+	}
+	.main-rj {
+		width: 100%;
+	}
 }
 
 /* CSS End BY RJ */
@@ -778,7 +787,7 @@ button .fa-search {
 	padding-bottom:30px;
 }
 
-/* =========== Category Page ============ */
+/* =========== Category Page Design ============ */
 /* Main Container -- 
 It has two portions "side-menu-rj - 30%" and "main-rj - 70%" */
 .container {
@@ -942,7 +951,7 @@ input.Button:hover {
 
 }
 
-/* Footer Design Starts Here */
+/* Footer Design By RJ */
 footer {
 	background:#120404;
 	color: #fff;
@@ -1071,7 +1080,6 @@ footer {
 	.right-info {
 		width: 100%;
 		padding: 18px;
-		/* min-width: 320px; */
 	}
 	.footer-para {
 		width: 100%;
@@ -1101,11 +1109,12 @@ footer {
 		color: #999999;
 	}
 }
+/* Footer Desing Ended */
 
-.inner-page {
+/* .inner-page {
 	background:url(../images/inner-page.png?v=2) repeat-x top left;
 	padding:0px;
-}
+} */
 
 .payment {
 	margin-top:10px;
@@ -1484,17 +1493,12 @@ margin-left:20px;
 
 }
 @media all and (min-width: 320px) and (max-width: 768px) {
-
 	.container {
-
-		width:100%;
-
+		width: 100%;
 	}
 
 	.logo {
-
-		padding-bottom:0px;
-
+		padding-bottom: 0;
 	}
 
 	.logo img {
@@ -1503,484 +1507,292 @@ margin-left:20px;
 	}
 
 	.top-header .fleft, .top-header .fright {
-		display:block;
-		float:none;
-		width:auto;
-		text-align:center;
+		display: block;
+		float: none;
+		width: auto;
+		text-align: center;
 	}
 
 	.top-header .fright {
-		border-top:1px solid #333;
+		border-top: 1px solid #333;
 	}
 
 	.social-media ul {
-		margin-bottom:-5px;
+		margin-bottom: -5px;
 	}
 
 	.top-header ul li {
-
-		float:none;
-
-		display:inline-table;
-
-		margin-left:-5px;
-
-		text-align:center;
-
+		float: none;
+		display: inline-table;
+		margin-left: -5px;
+		text-align: center;
 	}
 
 	.top-links ul li.my-cart {
-		border-right:1px solid #333;
+		border-right: 1px solid #333;
 	}
 
 	.header .fleft, .header .fright {
-
-		display:block;
-
-		float:none;
-
-		width:auto;
-
-		text-align:center;
-
+		display: block;
+		float: none;
+		width: auto;
+		text-align: center;
 	}
 
 	.header .fright {
-
-		border-top:1px solid #e4e4e4;
-
+		border-top: 1px solid #e4e4e4;
 	}
 
 	.heading h2 {
-
-		font-size:20px;
-
+		font-size: 20px;
 	}
 
 	.main-categories {
-
-		width:100%;
-
-		overflow-x:scroll;
-
+		width: 100%;
+		overflow-x: scroll;
 	}
 
 	.main-categories ul {
-
-		width:720px;
-
-		height:104px;
-
+		width: 720px;
+		height: 104px;
 	}
 
 	.main-categories ul li {
-
-		float:left;
-
-		display:block;
-
+		float: left;
+		display: block;
 	}
 
 	.banners {
-
-		display:none;
-
+		display: none;
 	}
 
 	.main-content {
-
-		background:url(../images/inner-page.png) repeat-x top left;
-
-		margin-top:-20px;
-
+		background: url(../images/inner-page.png) repeat-x top left;
+		margin-top: -20px;
 	}
 
 	.main-content .container {
-
-		padding:0px 5px;
-
+		padding: 0px 5px;
 	}
 
 	.main-content .fleft, .main-content .fright {
-
-		float:none;
-
-		display:block;
-
+		float: none;
+		display: block;
 	}
 
 	.page-content {
-
-		width:100%;
-
-		border:none;
-
-		padding-left:0px;
-
+		width: 100%;
+		border: none;
+		padding-left: 0px;
 	}
 
 	.categories-list {
-
-		padding:0px;
-
-		width:100%;
-
-		text-align:center;
-
+		padding: 0px;
+		width: 100%;
+		text-align: center;
 	}
 
 	.categories-list .heading {
-
-		background:none;
-
-		display:block;
-
-		text-align:center;
-
-		border:none;
-
+		background: none;
+		display: block;
+		text-align: center;
+		border: none;
 	}
 
 	.categories-list .heading h2 {
-
-		background:none;
-
-		cursor:pointer;
-
-		background:url(../images/arrow-white.png?v=2) no-repeat right center #f09a20;
-
-		color:#fff;
-
-		margin-top:10px;
-
-		padding:5px 25px 5px 5px;
-
-	   -moz-border-radius: 5px;
-
-	-webkit-border-radius: 5px;
-
-	        border-radius: 5px;
-
+		background: none;
+		cursor: pointer;
+		background: url(../images/arrow-white.png?v=2) no-repeat right center #f09a20;
+		color: #fff;
+		margin-top: 10px;
+		padding: 5px 25px 5px 5px;
+	    -moz-border-radius: 5px;
+	    -webkit-border-radius: 5px;
+	    border-radius: 5px;
 	}
 
 	.listing ul {
-
-		text-align:center;
-
+		text-align: center;
 	}
 
 	.listing ul li {
-
-		float:none;
-
-		display:inline-table;
-
+		float: none;
+		display: inline-table;
 	}
 
 	.subscription-box .fleft, .subscription-box .fright {
-
-		float:none;
-
+		float: none;
 	}
 
 	.subscription-form {
-
-		padding:0px 10px;
-
+		padding: 0 10px;
 	}
 
 	.subscription-form .fleft, .subscription-form .fright {
-
-		float:left;
-
+		float: left;
 	}
 
 	.subscription-form input.TextField {
-
-		width:68%;
-
-		font-size:18px;
-
+		width: 68%;
+		font-size: 18px;
 	}
 
 	.subscription-form input.Button {
-
-		width:30%;
-
-		font-size:18px;
-
+		width: 30%;
+		font-size: 18px;
 	}
 
 	.subscription-box {
-
-		padding:15px 0px;
-
+		padding: 15px 0px;
 	}
 
 	.subscription-box h2 {
-
-		font-size:18px;
-
-		text-align:center;
-
+		font-size: 18px;
+		text-align: center;
 	}
 
 	.contact-page .fleft, .contact-page .fright {
-
-		float:none;
-
-		display:block;
-
+		float: none;
+		display: block;
 	}
 
 	.contact-form, .contact-details {
-
-		width:100%;
-
-		border:none;
-
-		padding:0px;
-
+		width: 100%;
+		border: none;
+		padding: 0;
 	}
 
 	.contact-details {
-
-		border-top:1px solid #e4e4e4;
-
-		margin-top:10px;
-
-		padding-top:10px;
-
+		border-top: 1px solid #e4e4e4;
+		margin-top: 10px;
+		padding-top: 10px;
 	}
 
 	.login-register-msg h2 {
-
-		font-size:18px;
-
-		text-align:center;
-
+		font-size: 18px;
+		text-align: center;
 	}
 
 	#CheckoutForm .fleft, #CheckoutForm .fright {
-
-		float:none;
-
-		display:block;
-
+		float: none;
+		display: block;
 	}
 
 	#CheckoutForm input.TextField, #CheckoutForm .Textarea {
-
-		width:98%;
-
-		margin:5px 1%;
-
+		width: 98%;
+		margin: 5px 1%;
 	}
 
 	#CheckoutForm input.TextField[name="DiscountCode"] {
-
-		width:98%;
-
+		width: 98%;
 	}
 
 	.checkout-box {
-
-		width:100%;
-
-		margin-bottom:10px;
-
+		width: 100%;
+		margin-bottom: 10px;
 	}
 
 	.pDetailpage .fleft, .pDetailpage .fright {
-
-		float:none;
-
-		display:block;
-
+		float: none;
+		display: block;
 	}
 
 	.product-detail, .product-images {
-
-		width:100%;
-
-		margin:0px;
-
-		padding:0px;
-
+		width: 100%;
+		margin: 0;
+		padding: 0;
 	}
 
 	#pi-next {
-
-		right:55px;
-
+		right: 55px;
 	}
 
-	/*ul#menu {
-
-		display:none;
-
-	}*/
-
 	.categories-ul {
-
-		position:fixed;
-
-		z-index:9;
-
-		width:90%;
-
-		top:0px;
-
-		left:-1000px;
-
-		background:#ccc;
-
-		
-
+		position: fixed;
+		z-index: 9;
+		width: 90%;
+		top: 0;
+		left: -1000px;
+		background: #ccc;
 		-webkit-transition: left 0.5s ease-in-out;
-
 		-moz-transition: left 0.5s ease-in-out;
-
 		-o-transition: left 0.5s ease-in-out;
-
 		-ms-transition: left 0.5s ease-in-out;
-
 		transition: left 0.5s ease-in-out;
-
 	}
 
 	.categories-ul ul#menu {
-
-		background:#f09a20;
-
-		overflow-y:scroll;
-
-		width:70%;
-
-		float:left;
-
+		background: #f09a20;
+		overflow-y: scroll;
+		width: 70%;
+		float: left;
 	}
 
 	.categories-ul-show {
-
-		left:0px;
-
+		left: 0;
 	}
 
 	.categories-ul li {
-
-		text-align:left;
-
+		text-align: left;
 	}
 
 	.categories-ul li a {
-
-		color:#fff;
-
-		text-decoration:none;
-
-		display:block;
-
-		padding:5px;
-
-		font-weight:bold;
-
-		border-bottom:1px solid #fff;
-
+		color: #fff;
+		text-decoration: none;
+		display: block;
+		padding: 5px;
+		font-weight: bold;
+		border-bottom: 1px solid #fff;
 		-webkit-transition: background 0.5s ease;
-
 		-moz-transition: background 0.5s ease;
-
 		-o-transition: background 0.5s ease;
-
 		-ms-transition: background 0.5s ease;
-
 		transition: background 0.5s ease;
-
 	}
 
 	.categories-ul li ul li a {
-
-		padding-left:20px;
-
-		font-weight:normal;
-
+		padding-left: 20px;
+		font-weight: normal;
 	}
 
 	.categories-ul li ul li a:before {
-
-		content:'• ';
-
+		content: '• ';
 	}
 
 	.categories-ul li a:hover {
-
-		background:#f7941d;
-
+		background: #f7941d;
 	}
 
-	.categories-ul li:lat-chid a {
-
-		border-bottom:none;
-
+	.categories-ul li a:last-child {
+		border-bottom: none;
 	}
 
 	.close-categories-ul {
-
-		background:#f7941d;
-
-		color:#fff;
-
-		font-weight:bold;
-
-		float:left;
-
-		display:block;
-
-		padding:10px 20px;
-
-		font-size:22px;
-
+		background: #f7941d;
+		color: #fff;
+		font-weight: bold;
+		float: left;
+		display: block;
+		padding: 10px 20px;
+		font-size: 22px;
 	}
 
 	.product-images img.main-image {
-
-		width:100%;
-
+		width: 100%;
 	}
 
-	
-
 	.no-margin {
-
-		margin-top:0px;
-
+		margin-top: 0;
 	}
 
 	.cart-btns {
-
-		margin-bottom:20px;
-
+		margin-bottom: 20px;
 	}
 
 	.cart-btns input.Button {
-
-		display:block;
-
-		margin:0px;
-
+		display: block;
+		margin: 0;
 	}
-
-	/*
-
-	.no-margin .container {
-
-		padding-top:20px;
-
-	}
-
-	*/
-
 
 }
 
@@ -2129,93 +1941,58 @@ margin-left:20px;
 }
 
 @media all and (min-width: 999px) and (max-width: 1199px) {
-
 	.container {
-
-		width:99%;
-
+		width: 99%;
 	}
 
 	.heading h2 {
-
-		font-size:25px;
-
-	}
-
-	.main-content .container {
-
-		width:999px;
-
+		font-size: 25px;
 	}
 
 	.categories-list {
-
-		width:250px;
-
+		width: 250px;
 	}
 
 	.page-content {
-
-		width:729px;
-
+		width: 729px;
 	}
 
 	.item {
-
-		width:226px;
-
+		width: 226px;
 	}
 
 	.listing ul li {
-
-		width:226px;
-
-		margin:0px 5px;
-
+		width: 226px;
+		margin: 0 5px;
 	}
 
 	.logo {
-
-		width:25%;
-
+		width: 25%;
 	}
 
 	.logo img {
-
-		width:100%;
-
-		margin:15px 5px 0px 5px;
-
+		width: 100%;
+		margin: 15px 5px 0 5px;
 	}
 
 	.subscription-box h2 {
-
-		font-size:25px;
-
-		margin-top:5px;
-
+		font-size: 25px;
+		margin-top: 5px;
 	}
 
 	.product-detail {
-		
-
-		width:255px;
-
+		width: 255px;
 	}
 
 	.product-images {
-
-		width:430px;
-
+		width: 430px;
 	}
 
 	#pi-next {
-
-		right:20px;
-
+		right: 20px;
 	}
-
 }
+
 @media all and (max-width : 420px) {
 	#new_shop {
 	width: 30px;
