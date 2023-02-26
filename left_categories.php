@@ -4,9 +4,14 @@
     <ul id="menu">
     <?php
 		foreach($pCategories as $pCategory)
-		{ //echo $pCategory[2];exit;
+		{
 	?>
-    	<li><a href="<?php echo $pCategory[2]; ?>"><?php echo $pCategory[1]; ?></a><?php echo $Products->ProductSubCategories($pCategory[0]); ?></li>
+    	<li>
+			<a href="<?php echo $pCategory[2]; ?>">
+				<?php echo $pCategory[1]; ?>
+		    </a>
+			<?php echo $Products->ProductSubCategories($pCategory[0]); ?>
+		</li>
     <?php
 		}
 	?>    
@@ -20,16 +25,9 @@
 	<!-- Search Box -->
 	<div class="container-rj">
 		<div class="wrapper-rj">
-			<input type="text" name="search" id="search-rj" placeholder="Search here" autocomplete="chrome-off">
+			<input type="text" name="search-rj" id="search-rj" placeholder="Search here" autocomplete="chrome-off">
 			<button><i class="fa fa-search"></i></button>
 			<div class="results-rj">
-				<ul>
-					<li>HTML</li>
-					<li>CSS</li>
-					<li>JavaScript</li>
-					<li>jQuery</li>
-					<li>React</li>
-				</ul>
 			</div>
 		</div>
 	</div>
@@ -156,9 +154,7 @@
 				return item.toLowerCase().includes(input.toLowerCase());
 			});
 		}
-
 		renderResults(results);
-
 	});
 
 	function renderResults(results) {
@@ -171,7 +167,6 @@
 		}).join('');
 
 		searchWrapper.classList.add('show-rj');
-		
 		resultsWrapper.innerHTML = `<ul>${content}</ul>`;
 	}
 </script>
