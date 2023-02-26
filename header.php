@@ -103,13 +103,16 @@
 <section>
 	<header>
 		<nav>
+			<!-- Logo -->
 			<div class="logo">
 				<a href="<?php echo WEB_URL; ?>">
-					<img src="<?php echo IMAGES_PATH; ?>logo.png" alt="Safety and Fire" width="300" height="90"/>
+					<img src="<?php echo IMAGES_PATH; ?>logo.png" alt="Safety and Fire" width="250" height="70"/>
 				</a>
 			</div>
+
+			<!-- Nvabar Links -->
 			<ul class="nav-menu">
-				<li><a href="<?php echo WEB_URL; ?>" class="active">Home</a></li>
+				<li><a href="<?php echo WEB_URL; ?>" class="active-rj">Home</a></li>
 				<li>
 					<a href="javascript:void(0)" class="nav-link">
 						<label for="droplist1" class="toggle">
@@ -177,6 +180,14 @@
 					</ul>
 				</li>
 			</ul>
+
+			<!-- Search Box -->
+			<div class="search-box">
+				<input type="text" placeholder="Search" class="search-box__input" aria-label="search"/>
+				<button class="search-box__button" aria-label="submit search">
+					<i class="fa-solid fa-magnifying-glass"></i>
+				</button>
+			</div>
 		</nav>
 	</header>
 </section>
@@ -192,7 +203,7 @@
 	</div>
 </div>
 
-<!-- JavaScript -->
+<!-- JavaScript for Menu Toggling -->
 <script>
 	// Setup hamburger menu
 	{
