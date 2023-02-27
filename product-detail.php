@@ -37,10 +37,10 @@ $Stock=10;
 <section class="main-content inner-page">
 <div class="container">
 <?php include_once("left_categories.php"); ?>
-<aside class="fleft page-content">
+<div class="main-rj">
 <section class="products-listing">
-    <div class="heading"><h2><?php echo $PageTitle; ?></h2></div>
-    <div class="pDetailpage">
+    <div class="heading-rj"><h2><?php echo $PageTitle; ?></h2></div>
+    <div class="pDetailpage heading-rj">
     <div class="fleft product-images exzoom hidden" id="exzoom">
        
     <div class="exzoom_img_box">
@@ -178,7 +178,7 @@ $Stock=10;
 </section>
 
 <section class="products-listing">
-    <div class="heading"><h2>Linked Product</h2></div>
+    <div class="heading-rj"><h2>Linked Product</h2></div>
     <?php
 		$Query = "Select p.TableID, p.Title, p.Price, p.Image, p.UrlKeyword 
 		from products p
@@ -189,7 +189,8 @@ $Stock=10;
 		$Products->ShowLinkedProducts($Query);
 	?>
 </section>
-</aside>
+</div>
+
 <div class="clear"></div>
 </div>
 </section>

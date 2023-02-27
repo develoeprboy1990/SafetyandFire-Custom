@@ -31,76 +31,17 @@
 			</div>
 		</div>
 	</div>
-
 	<!-- Side Menu -->
 	<ul class="accordion-menu-rj">
+		<?php foreach($pCategories as $pCategory) { ?>
 		<li>
-			<div class="dropdownlink-rj">
-				<!-- <i class="fa-solid fa-fire-extinguisher"></i>  -->
-					Extinguishers 
+				<div class="dropdownlink-rj"><?php echo $pCategory[1]; ?>
 				<i class="fa fa-chevron-down" aria-hidden="true"></i>
-			</div>
-			<ul class="submenuItems-rj">
-				<li><a href="#">DCP Extinguishers</a></li>
-				<li><a href="#">Co2 Extinguishers</a></li>
-				<li><a href="#">Mobile Extinguishers</a></li>
-				<li><a href="#">Co2 Extinguisher Spares & Accessories</a></li>
-				<li><a href="#">DCP Extinguisher Spares & Accessories</a></li>
-			</ul>
+				</div>
+			<?php echo $Products->ProductSubCategories($pCategory[0]); ?>
 		</li>
-		<li>
-			<div class="dropdownlink-rj">
-				<!-- <i class="fa-solid fa-hose-reel"></i> -->
-					Hose Reels 
-				<i class="fa fa-chevron-down" aria-hidden="true"></i>
-			</div>
-			<ul class="submenuItems-rj">
-				<li><a href="#">Fire Hose Reels</a></li>
-				<li><a href="#">Fire Hose Reel Spares</a></li>
-			</ul>
-		</li>
-		<li>
-			<div class="dropdownlink-rj">
-				<i class="fa-solid fa-fire-hydrant"></i> 
-					Hydrants 
-				<i class="fa fa-chevron-down" aria-hidden="true"></i>
-			</div>
-			<ul class="submenuItems-rj">
-				<li><a href="#">Hydrants and Accessories</a></li>
-				<li><a href="#">Layflats Hose, Nozzles and Couplings</a></li>
-			</ul>
-		</li>
-		<li>
-			<div class="dropdownlink-rj">
-				<!-- <i class="fa-solid fa-cabinet-filing"></i>  -->
-					Brackets and Cabinets 
-				<i class="fa fa-chevron-down" aria-hidden="true"></i>
-			</div>
-			<ul class="submenuItems-rj">
-				<li><a href="#">Brackets</a></li>
-				<li><a href="#">Cabinets and Covers</a></li>
-			</ul>
-		</li>
-		<li>
-			<div class="dropdownlink-rj">
-				<!-- <i class="fa-solid fa-solid fa-grid-2"></i>  -->
-					General Accessories 
-				<i class="fa fa-chevron-down" aria-hidden="true"></i>
-			</div>
-			<ul class="submenuItems-rj">
-				<li><a href="#">Fire Blankets</a></li>
-				<li><a href="#">Ring Gauges and General Accessories</a></li>
-				<li><a href="#">Alarm Station</a></li>
-				<li><a href="#">Dry Chemical Powder</a></li>
-				<li><a href="#">Signs and Labels</a></li>
-			</ul>
-		</li>
-	</ul>
+		<?php } ?> 	</ul>
 </aside>
-
-
-
-
 <!-- JavaScript -->
 <script>
 	// Side Menu Js

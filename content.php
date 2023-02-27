@@ -12,8 +12,8 @@ if(isset($_REQUEST['Keyword']))
 	<div class="clear height5"></div>
     <div class="container">
         <div class="content-div">
-            <div class="heading"><h2><?php echo $MetaTitle; ?></h2></div>
-            <div class="CmsDescription"><?php echo $pageDescription; ?></div>
+            <div class="heading-rj"><h2><?php echo $MetaTitle; ?></h2></div>
+            <div class="CmsDescription" style="width: 96%;margin: 0 auto;"><?php echo $pageDescription; ?></div>
         </div>
     </div>
 </section>
@@ -23,5 +23,4 @@ if(isset($_REQUEST['Keyword']))
 	include_once("html_footer.php");
 }
 else
-	$Web->Redirect(WEB_URL);
-?>
+$Web->Redirect(WEB_URL); ?>

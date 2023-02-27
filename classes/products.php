@@ -558,12 +558,32 @@ class products extends WebFunctions
 		
 		if($this->num_rows()>0)
 		{
-			echo '<ul>';
+			echo '<ul class="submenuItems-rj">';
 			while($this->next_Record())
 			{
 				$Link = WEB_URL."productss/sub-category/".$this->f('UrlKeyword').".html";
 				$Title = $this->f('Title');
 				echo '<li><a class="tooltip" title="'.$Title.'" href="'.$Link.'">'.$this->SubStrT($Title, 25).'</a>';
+			}
+			echo '</ul>';
+		}
+	}
+
+	function HomeSubCategories($CategoryID)
+	{
+		$this->query("select * from p_category 
+		where Status='".ACTIVE."' and 
+		ParentID='$CategoryID' 
+		order by Sequence asc");
+		
+		if($this->num_rows()>0)
+		{
+			echo '<ul class="sub">';
+			while($this->next_Record())
+			{
+				$Link = WEB_URL."productss/sub-category/".$this->f('UrlKeyword').".html";
+				$Title = $this->f('Title');
+				echo '<li><a title="'.$Title.'" href="'.$Link.'">'.$this->SubStrT($Title, 25).'</a>';
 			}
 			echo '</ul>';
 		}

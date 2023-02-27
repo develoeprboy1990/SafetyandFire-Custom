@@ -11,7 +11,7 @@ include_once("header.php");
 <section class="main-content inner-page contact-page no-margin">
 <div class="clear height5"></div>
     <div class="container">
-    <div class="heading"><h2><?php echo $PageTitle; ?></h2></div>
+    <div class="heading-rj"><h2><?php echo $PageTitle; ?></h2></div>
     <div class="fleft contact-form">
     	<p>Please send us your questions, comments or concerns by filling out the form below. We´ll do our best to get back to you as quickly as possible, usually within 1-2 business days.</p>
     	<form name="ContactForm" id="ContactForm" method="post" action="">
@@ -28,7 +28,8 @@ include_once("header.php");
 								<option value="Other">Other</option>
 							</select>-->
             <textarea name="Message" id="Message" class="Textarea" required="TextField" placeholder="Enter your message..."></textarea>
-            <input type="submit" value="Submit" class="Button" />&nbsp;<span id="ErrorMsg"></span>
+            <input type="submit" value="Submit" class="Button" />&nbsp;
+            <span id="ErrorMsg"></span>
         </form>
     </div>
     <div class="fleft contact-details">

@@ -7,7 +7,7 @@
 ?>
 
 <section class="main-content">
-	<div class="container">
+	<div class="container" style="width: 96%;margin: 0 auto;">
 		<!-- Left Sidebar -->
 		<!-- Removed -->
 
@@ -38,11 +38,8 @@
 		<div class="clear"></div>
 	</div>
 </section>
-
 <?php
 	include_once("subscription.php");
 	include_once("footer.php");
 	include_once("html_footer.php");
 ?>
-
-

@@ -54,7 +54,7 @@
 	{
 		$pC++;
 		$Link = WEB_URL."productss/category/".$Web->f('UrlKeyword').".html";
-		$pCategories[$pC] = array($Web->f('TableID'), $Web->f('Title'), $Link);
+		$pCategories[$pC] = array($Web->f('TableID'), $Web->f('Title'), $Link,$Web->f('UrlKeyword'));
 	}
 	$TotalpCat=count($pCategories);
 ?>
@@ -72,10 +72,10 @@
         <?php ?><div class="fright top-links">
 			<ul>
         	<!-- <li><a href="mailto:<?php //echo $_SESSION[WEBSITE_SETTINGS][2]; ?>"><?php //echo $_SESSION[WEBSITE_SETTINGS][2]; ?></a></li>
-             <li class="phone"><?php echo $_SESSION[WEBSITE_SETTINGS][1]; ?></li> -->
+             <li class="phone"><?php //echo $_SESSION[WEBSITE_SETTINGS][1]; ?></li> -->
              <li class="phone"><a href="tel:<?php echo $_SESSION[WEBSITE_SETTINGS][1]; ?>"><i class="fa fa-phone" aria-hidden="true" style="font-size:20px;color:white;"></i>&nbsp;&nbsp;<?php echo $_SESSION[WEBSITE_SETTINGS][1]; ?></a></li>
             </ul>
-        </div><?php?>
+        </div>
         <div class="clear"></div>
     </div>
 </section>
@@ -113,81 +113,31 @@
 			<!-- Nvabar Links -->
 			<ul class="nav-menu">
 				<li><a href="<?php echo WEB_URL; ?>" class="active-rj">Home</a></li>
+				<?php
+				for($a=1; $a<=5; $a++)
+				{
+
+				?>
 				<li>
-					<a href="javascript:void(0)" class="nav-link">
-						<label for="droplist1" class="toggle">
-							Extinguishers <i class="fa-solid fa-angle-down"></i>
+					<a href="<?php echo $pCategories[$a][2]; ?>" class="nav-link <?php echo $pCategories[$a][3]; ?>">
+						<label for="<?php echo $pCategories[$a][3]; ?>" class="toggle">
+						<?php echo $pCategories[$a][1]; ?> 
+						<i class="fa-solid fa-angle-down"></i>
 						</label>
 					</a>
-					<input type="checkbox" id="droplist1" />
-					<ul class="sub">
-						<li><a href="#">DCP Extinguishers</a></li>
-						<li><a href="#">Co2 Extinguishers</a></li>
-						<li><a href="#">Mobile Extinguishers</a></li>
-						<li><a href="#">Co2 Extinguisher Spares & Accessories</a></li>
-						<li><a href="#">DCP Extinguisher Spares & Accessories</a></li>
-					</ul>
+					<input type="checkbox" id="<?php echo $pCategories[$a][3]; ?>" /> 
+					<?php echo $Products->HomeSubCategories($pCategories[$a][0]); ?>
 				</li>
-				<li>
-					<a href="javascript:void(0)" class="nav-link">
-						<label for="droplist2" class="toggle">
-							Hose Reels <i class="fa-solid fa-angle-down"></i>
-						</label>
-					</a>
-					<input type="checkbox" id="droplist2" />
-					<ul class="sub">
-						<li><a href="#">Fire Hose Reels</a></li>
-						<li><a href="#">Fire Hose Reel Spares</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="javascript:void(0)" class="nav-link">
-						<label for="droplist3" class="toggle">
-							Hydrants <i class="fa-solid fa-angle-down"></i>
-						</label>
-					</a>
-					<input type="checkbox" id="droplist3" />
-					<ul class="sub">
-						<li><a href="#">Hydrants and Accessories</a></li>
-						<li><a href="#">Layflats Hose, Nozzles and Couplings</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="javascript:void(0)" class="nav-link">
-						<label for="droplist4" class="toggle">
-							Brackets and Cabinets <i class="fa-solid fa-angle-down"></i>
-						</label>
-					</a>
-					<input type="checkbox" id="droplist4" />
-					<ul class="sub">
-						<li><a href="#">Brackets</a></li>
-						<li><a href="#">Cabinets and Covers</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="javascript:void(0)" class="nav-link">
-						<label for="droplist5" class="toggle">
-							General Accessories <i class="fa-solid fa-angle-down"></i>
-						</label>
-					</a>
-					<input type="checkbox" id="droplist5" />
-					<ul class="sub">
-						<li><a href="#">Fire Blankets</a></li>
-						<li><a href="#">Ring Gauges and General Accessories</a></li>
-						<li><a href="#">Alarm Station</a></li>
-						<li><a href="#">Dry Chemical Powder</a></li>
-						<li><a href="#">Signs and Labels</a></li>
-					</ul>
-				</li>
+				<?php } ?>
 			</ul>
 
 			<!-- Search Box -->
-			<div class="search-box">
+			<!-- <div class="search-box">
 				<input type="text" placeholder="Search" class="search-box__input" aria-label="search"/>
 				<button class="search-box__button" aria-label="submit search">
 					<i class="fa-solid fa-magnifying-glass"></i>
 				</button>
-			</div>
+			</div> -->
 		</nav>
 	</header>
 </section>

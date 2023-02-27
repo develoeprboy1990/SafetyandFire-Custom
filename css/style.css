@@ -613,15 +613,6 @@ a {
 .results-rj ul li:hover {
   background: #ececec;
 }
-/* Search Box Responsiveness */
-@media (max-width: 650px) {
-	.side-menu-rj {
-		display: none;
-	}
-	.main-rj {
-		width: 100%;
-	}
-}
 
 /* Search Box (Main Menu) */
 .search-box {
@@ -1172,6 +1163,7 @@ footer {
 .contact-form {
 	width: 50%;
 	padding-right: 20px;
+	padding-left: 20px;
 	border-right: 1px solid #e4e4e4;
 }
 
@@ -1781,6 +1773,12 @@ footer {
 	.cart-btns input.Button {
 		display: block;
 		margin: 0;
+	}
+	.side-menu-rj {
+		display: none;
+	}
+	.main-rj {
+		width: 100%;
 	}
 
 }

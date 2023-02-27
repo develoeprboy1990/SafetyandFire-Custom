@@ -166,13 +166,4 @@ define("EMAIL_ADDRESS_FOR_INQUIRY", $_SESSION[WEBSITE_SETTINGS][2]);
 define("PAYPAL_ID", $_SESSION[WEBSITE_SETTINGS][7]);
 
 $_SESSION['Currency'] = DEFAULT_CURRENCY;
-
-$mainCatClass[1]='cakes';
-$mainCatClass[2]='flowers';
-$mainCatClass[3]='balloons';
-
-/*$mainCatClass[4]='chocolates';
-$mainCatClass[5]='for-him';
-$mainCatClass[6]='for-her';
-$mainCatClass[7]='kids';*/
 ?>

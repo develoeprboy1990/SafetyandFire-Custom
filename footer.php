@@ -14,21 +14,26 @@
             <div class="right-info">
                 <h2>We would love to hear from you!</h2>
                 <div class="contact-info">
-                    <form action="">
+                    <form action="" name="ContactForm" id="ContactForm" method="post">
+                        <input type="hidden" name="ContactFormFlag" id="ContactFormFlag" />
                         <div class="input-box">
-                            <input type="text" name="" required="required" />
+                            <input type="text"  name="Name" id="Name" required="required" />
                             <span>Your Name</span>
                         </div>
                         <div class="input-box">
-                            <input type="text" name="" required="required" />
+                            <input type="text" name="Email" id="Email" required="required" />
                             <span>Email Address</span>
                         </div>
                         <div class="input-box">
-                            <textarea required="required"></textarea>
+                            <input type="text" name="Phone" id="Phone" required="required" />
+                            <span>Phone Number</span>
+                        </div>
+                        <div class="input-box">
+                            <textarea  name="Message" id="Message"  required="required"></textarea>
                             <span>Type Message</span>
                         </div>
                         <div class="input-box">
-                            <input type="submit" name="" value="Send Message" />
+                            <input  type="submit" value="Submit" />
                         </div>
                     </form>
                 </div>
