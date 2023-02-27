@@ -5,14 +5,15 @@
 	include_once("header.php");
 	include_once("banner.php");
 ?>
-
+<!-- home-content-rj -->
 <section class="main-content">
 	<div class="container" style="width: 96%;margin: 0 auto;">
 		<!-- Left Sidebar -->
 		<!-- Removed -->
 
-		<!-- Main Content -->
-		<section class="products-listing">
+		<!-- ========= Main Content ========= -->
+		<!-- Featured Products -->
+		<section class="featured-products-rj">
 			<div class="heading-rj"><h2>Featured Products</h2></div>
 			<?php
 				$Query = "select TableID, Title, Price, Image, UrlKeyword 
@@ -24,7 +25,8 @@
 			?>
 		</section>
 
-		<section class="products-listing">
+		<!-- Best selling Products -->
+		<section class="best-sellings-rj">
 			<div class="heading-rj"><h2>Best Sellings</h2></div>
 			<?php
 				$Query = "select TableID, Title, Price, Image, UrlKeyword 
