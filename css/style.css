@@ -1,10 +1,12 @@
+/* ======== Basic Resets ======== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+	outline: none;
 }
 
-/* Variables By RJ */
+/* ======== Variables By RJ ======== */
 :root {
 	--clr-primary: #f09a20;
 	--clr-secondary: #bf161f;
@@ -19,27 +21,8 @@ body {
 	overflow-x: hidden;
 }
 
-h1, h2, h3, p {
-	margin: 0px;
-	padding: 0px;
-}
-
-* {
-    outline: none;
-	-moz-box-sizing:    border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing:         border-box;
-}
-
 ul, li {
-
 	list-style: none;
-
-}
-
-h1, h2, h3, h4, p, form, ul, li {
-	margin: 0;
-	padding: 0;
 }
 
 .fleft  { 
@@ -177,7 +160,7 @@ a {
 	background-color: #262626;
 }
 
-/* CSS By RJ */
+/* ======== CSS By RJ ======== */
 /* Main Menu CSS */
 /* !BASE RESET */
 header {
@@ -278,20 +261,6 @@ header nav {
 .fa-solid {
     font-weight: 600;
     font-size: 14px;
-}
-
-/* Main Content */
-.content {
-    flex-grow: 1;
-    padding: 4% 2%;
-}
-
-.content h1 {
-    margin-bottom: 1rem;
-}
-
-.content h2 {
-    margin: 0.65rem 0;
 }
 
 /* Hamburger */
@@ -408,7 +377,6 @@ header nav {
         flex-direction: column;
     }
 	.hamburger-container {
-		/* z-index: 10; */
 		top: 70px;
 	}
 }
@@ -448,7 +416,6 @@ header nav {
 
 @media (max-width: 370px) {
     .menu-toggle {
-		/* right: 14px; */
 		width: 40px;
 		height: 40px;
 	}
@@ -457,7 +424,7 @@ header nav {
 	}
 }
 
-/* Side Menu */
+/* ======== Side Menu ======== */
 ul {
     list-style: none;
 }
@@ -526,7 +493,7 @@ a {
     }
 }
 
-/* Search Box (Sidebar) */
+/* ======== Search Box (Sidebar) ======== */
 .container-rj {
     padding: 25px 0 0 0;
     height: 100px;
@@ -623,7 +590,7 @@ a {
 	}
 }
 
-/* Search Box (Main Menu) */
+/* ======== Search Box (Main Menu) ======== */
 .search-box {
 	--size: 50px;
     border: 2px solid var(--clr-primary);
@@ -717,7 +684,36 @@ transition: background-color 150ms ease-in-out;
 	}
 }
 
-/* CSS End BY RJ */
+/* ======== Main Content (Home Page) ======== */
+.content {
+    flex-grow: 1;
+    padding: 4% 2%;
+}
+
+.content h1 {
+    margin-bottom: 1rem;
+}
+
+.content h2 {
+    margin: 0.65rem 0;
+}
+
+.home-content-rj {
+	width: 94%;
+	margin: 0 auto;
+}
+
+/* Featured Products */
+.featured-products-rj {
+	width: 100%;
+}
+
+/* Best Sellings Products */
+.featured-products-rj {
+	width: 100%;
+}
+/* Main Content Ended */
+/* ======== CSS End BY RJ ======== */
 
 .main-categories ul li {
 	float: left;
@@ -849,8 +845,7 @@ transition: background-color 150ms ease-in-out;
 }
 
 /* =========== Category Page Design ============ */
-/* Main Container -- 
-It has two portions "side-menu-rj - 30%" and "main-rj - 70%" */
+/* Main Container -- It has two portions "side-menu-rj - 30%" and "main-rj - 70%" */
 .container {
 	width: 100%;
 	position:relative;
@@ -866,10 +861,10 @@ It has two portions "side-menu-rj - 30%" and "main-rj - 70%" */
 }
 
 .heading-rj {
-	margin: 18px 0 12px 19px;
+	margin-top: 20px;
 }
 
-/* === HEADING STYLE === */
+/* HEADING STYLE */
 .heading-rj h2 {
 	font-size: 28px;
 	font-weight: 500;
@@ -884,7 +879,7 @@ It has two portions "side-menu-rj - 30%" and "main-rj - 70%" */
 	left: 0;
 	bottom: 0;
 	height: 5px;
-	width: 100px;
+	width: 110px;
 	background-color: var(--clr-primary);
 }
 .heading-rj h2:after {
@@ -893,17 +888,25 @@ It has two portions "side-menu-rj - 30%" and "main-rj - 70%" */
 	left: 0;
 	bottom: 2px;
 	height: 1px;
-	width: 95%;
+	width: 100%;
 	background-color: var(--clr-primary);
 }
-/* === HEADING STYLE END === */
+/* HEADING STYLE END */
+.listing {
+	margin-top: 24px;
+}
+
+.listing ul {
+	width: 100%;
+}
 
 .listing ul li {
-	width: 260px;
+	width: 25%;
     height: 270px;
     display: block;
     float: left;
-    margin: 0 0 10PX 20PX;
+    margin: 0 0 20px 0;
+	padding: 0 0 0 14px;
     cursor: pointer;
 }
 /* Category Page Design Ended */
@@ -986,7 +989,7 @@ input.Button:hover {
 	background-color: var(--primary-hover);
 }
 
-/* Footer Design By RJ */
+/* ======== Footer Design By RJ ======== */
 footer {
 	background:#120404;
 	color: #fff;
@@ -1144,7 +1147,7 @@ footer {
 		color: #999999;
 	}
 }
-/* Footer Desing Ended */
+/* ========= Footer Desing Ended ======== */
 
 .payment {
 	margin-top: 10px;
@@ -1155,8 +1158,8 @@ footer {
 }
 
 .content-div p, 
-.contact-form p, 
-.main-content p {
+.contact-form p /*.main-content p*/
+{
 	margin: 10px 0;
 	line-height: 30px;
 }
@@ -1180,10 +1183,10 @@ footer {
 	padding-left: 10px;
 }
 
-.product-detail {
+/* .product-detail {
 	margin-left: 20px;
 	width: 450px;
-}
+} */
 
 .product-images {
 	width: 430px;
@@ -1686,11 +1689,11 @@ footer {
 		display: block;
 	}
 
-	.product-detail, .product-images {
+	/* .product-detail, .product-images {
 		width: 100%;
 		margin: 0;
 		padding: 0;
-	}
+	} */
 
 	#pi-next {
 		right: 55px;
@@ -1895,7 +1898,7 @@ footer {
 
 	}
 
-	.product-detail, .product-images {
+	/* .product-detail, .product-images {
 
 		width:100%;
 
@@ -1903,7 +1906,7 @@ footer {
 
 		padding:0px;
 
-	}
+	} */
 
 	#pi-next {
 
@@ -1969,9 +1972,9 @@ footer {
 		margin-top: 5px;
 	}
 
-	.product-detail {
+	/* .product-detail {
 		width: 255px;
-	}
+	} */
 
 	.product-images {
 		width: 430px;

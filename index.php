@@ -6,13 +6,14 @@
 	include_once("banner.php");
 ?>
 
-<section class="main-content">
+<section class="main-content home-content-rj">
 	<div class="container">
 		<!-- Left Sidebar -->
 		<!-- Removed -->
 
-		<!-- Main Content -->
-		<section class="products-listing">
+		<!-- ========= Main Content ========= -->
+		<!-- Featured Products -->
+		<section class="featured-products-rj">
 			<div class="heading-rj"><h2>Featured Products</h2></div>
 			<?php
 				$Query = "select TableID, Title, Price, Image, UrlKeyword 
@@ -24,7 +25,8 @@
 			?>
 		</section>
 
-		<section class="products-listing">
+		<!-- Best selling Products -->
+		<section class="best-sellings-rj">
 			<div class="heading-rj"><h2>Best Sellings</h2></div>
 			<?php
 				$Query = "select TableID, Title, Price, Image, UrlKeyword 
