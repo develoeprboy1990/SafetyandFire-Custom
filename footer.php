@@ -8,7 +8,7 @@
                     </a>
                 </div>
                 <p class="footer-para">The Quick and Easy Contact Form goes directly to an attended mailbox. 
-                Safequip strives to always be an asset to all our clients. 
+                Safety and fire strives to always be an asset to all our clients. 
                 We would like to thank you for your enquiry and continuous support.</p>
             </div>
             <div class="right-info">
