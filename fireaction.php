@@ -35,10 +35,6 @@ if(isset($_REQUEST['ContactFormFlag']) && $_REQUEST['ContactFormFlag']=='true')
         <td align="left" style="padding:5px;"><?php echo $Phone; ?></td>
     </tr>
     <tr>
-        <td align="right" style="padding:5px;">Subject: </td>
-        <td align="left" style="padding:5px;"><?php echo $Subject; ?></td>
-    </tr>
-    <tr>
         <td align="right" style="padding:5px;">Message: </td>
         <td align="left" style="padding:5px;"><?php echo $Message; ?></td>
     </tr>
@@ -48,14 +44,36 @@ if(isset($_REQUEST['ContactFormFlag']) && $_REQUEST['ContactFormFlag']=='true')
 	ob_end_clean();
 	$Return["Error"]= 0;
 	$Return["Msg"]	= $_SESSION[WEBSITE_SETTINGS][8];
+	/*$Return["SYSTEM_EMAIL_FROM_NAME"]	= SYSTEM_EMAIL_FROM_NAME;
+	$Return["EMAIL_ADDRESS_FOR_INQUIRY"]	= EMAIL_ADDRESS_FOR_INQUIRY;
+	
+	$Return["SYSTEM_EMAIL_FROM_NAME"]	= SYSTEM_EMAIL_FROM_NAME;
+	$Return["SYSTEM_EMAIL_FROM_EMAIL"]	= SYSTEM_EMAIL_FROM_EMAIL;
+	
+	
+	
 	
 	$mail->Subject = 'New Inquiry from Website';
 	$mail->addAddress(EMAIL_ADDRESS_FOR_INQUIRY, SYSTEM_EMAIL_FROM_NAME);
-	$mail->SetFrom(SYSTEM_EMAIL_FROM_EMAIL, SYSTEM_EMAIL_FROM_NAME);
+	$mail->addBCC('mr.elahi.ehsan@gmail.com', SYSTEM_EMAIL_FROM_NAME);
+	$mail->SetFrom($Email, $Name);
+	
 	$mail->addReplyTo($Email, $Name);
 	$mail->msgHTML($HTMLMessage);
 	$mail->AltBody = 'Name: '.$Name.' --- Email: '.$Email.' --- Phone: '.$Phone.' --- Subject: '.$Subject.' --- Message: '.$Message;
-	$mail->send();
+	$mail->send();*/
+
+
+	$toEmail = 'info@safetyandfire.co.za';
+	$MailMessage = 'Hello,, <br /><br />';
+	$MailMessage .='<b>Name:</b> '.$Name.'<br>';
+	$MailMessage .= '<b>Email:</b> '.$Email.'<br>';
+	$MailMessage .= '<b>Phone:</b> '.$Phone.'<br>';
+	$MailMessage .= '<b>Message:</b> '.$Message.'<br>';
+	
+
+	$Web->SendEmail($toEmail, 'New Inquiry from Website', $MailMessage);
+
 	echo json_encode($Return);
 }
 

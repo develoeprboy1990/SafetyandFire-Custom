@@ -39,6 +39,7 @@ else if($CheckCategory[0]=='sub-category')
 }
 else if($CheckCategory[0]=='search')
 {
+	$CheckCategory[1] = str_replace("-"," ",$CheckCategory[1]);
 	$PageTitle = 'Product Search Results for &ldquo;'.$CheckCategory[1].'&rdquo;';
 	$Query = "select TableID, Title, Price, Image, UrlKeyword from products	where Status='".ACTIVE."' and (Title like '%$CheckCategory[1]%' or ShortDesc like '%$CheckCategory[1]%' or Description like '%$CheckCategory[1]%') order by Sequence asc";
 }

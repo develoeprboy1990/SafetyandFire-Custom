@@ -123,7 +123,58 @@ $(document).ready(function(){
 		}, 'json');
 		return false;
 	});
+
+	$('#SearchForm').click(function(){
+		var search_rj = $('#search-rj').val();
+		search_rj =  search_rj.replace(/\s+/g, '-').toLowerCase();
+		var Url = WEB_URL+"productss/search/"+search_rj+".html";
+		window.location.href=Url;
+	});
+
+	$('#SearchFormMobile').click(function(){
+		var search_rj = $('#search-rj-mobile').val();
+		search_rj = search_rj.replace(/\s+/g, '-').toLowerCase();
+		var Url = WEB_URL+"productss/search/"+search_rj+".html";
+		window.location.href=Url;
+	});
+
+
+
+	$('#search-rj').keypress(function (e) {
+		var key = e.which;
+		if(key == 13)  // the enter key code
+		{
+			var search_rj = $('#search-rj').val();
+			search_rj = search_rj.replace(/\s+/g, '-').toLowerCase();
+			var Url = WEB_URL+"productss/search/"+search_rj+".html";
+			window.location.href=Url;
+		}
+	}); 
+
+
+	$('#search-rj').keypress(function (e) {
+		var key = e.which;
+		if(key == 13)  // the enter key code
+		{
+			var search_rj = $('#search-rj').val();
+			search_rj = search_rj.replace(/\s+/g, '-').toLowerCase();
+			var Url = WEB_URL+"productss/search/"+search_rj+".html";
+			window.location.href=Url;
+		}
+	}); 
 	
+	$('#search-rj-mobile').keypress(function (e) {
+		var key = e.which;
+		if(key == 13)  // the enter key code
+		{
+			var search_rj = $('#search-rj-mobile').val();
+			search_rj = search_rj.replace(/\s+/g, '-').toLowerCase();
+			var Url = WEB_URL+"productss/search/"+search_rj+".html";
+			window.location.href=Url;
+		}
+	}); 
+	
+
 	$('#AddToCartForm').submit(function(){
 		$('#CartMsg').html('Please wait...');
 		$('#AddToCartFlag').val('true');

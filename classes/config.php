@@ -84,7 +84,7 @@ define("DEFAULT_CURRENCY", "R");
 define("VERSION", 3);
 define("EMAIL_NOTIFICATION_FOOTER", "Web Administrator");
 define("SYSTEM_EMAIL_FROM_NAME", "No-reply");
-define("SYSTEM_EMAIL_FROM_EMAIL", "no-reply@lpaircon.co.uk");
+define("SYSTEM_EMAIL_FROM_EMAIL", "info@safetyandfire.co.za");
 
 $ProductType[1]='Normal';
 $ProductType[2]='Promotion';

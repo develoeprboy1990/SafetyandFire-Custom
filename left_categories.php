@@ -22,16 +22,15 @@
 <!-- Code By RJ -->
 <!-- Sidebar Menu -->
 <aside class="side-menu-rj">
-	<!-- Search Box -->
 	<div class="container-rj">
+		<?php $Link = WEB_URL."productss/search/test".".html"; ?>
 		<div class="wrapper-rj">
-			<input type="text" name="search-rj" id="search-rj" placeholder="Search here" autocomplete="chrome-off">
-			<button><i class="fa fa-search"></i></button>
+			<input type="text" value="<?php  if($CheckCategory[0]=='search') { echo $CheckCategory[1]; } ?>" name="search-rj" id="search-rj" placeholder="Search here" autocomplete="off">
+			 <button type="submit" value="Submit" ><i class="fa fa-search" id="SearchForm"></i></button>
 			<div class="results-rj">
 			</div>
 		</div>
 	</div>
-	<!-- Side Menu -->
 	<ul class="accordion-menu-rj">
 		<?php foreach($pCategories as $pCategory) { ?>
 		<li>
@@ -41,8 +40,20 @@
 			<?php echo $Products->ProductSubCategories($pCategory[0]); ?>
 		</li>
 		<?php } ?> 	</ul>
-</aside>
+</aside> 
 <!-- JavaScript -->
+<aside class="side-menu-rj-search">
+	<div class="container-rj-search">
+		<?php $Link = WEB_URL."productss/search/test".".html"; ?>
+		<div class="wrapper-rj">
+			<input type="text" value="<?php  if($CheckCategory[0]=='search') { echo $CheckCategory[1]; } ?>" name="search-rj" id="search-rj-mobile" placeholder="Search here" autocomplete="off">
+			 <button type="submit" value="Submit" ><i class="fa fa-search" id="SearchFormMobile"></i></button>
+			<div class="results-rj">
+			</div>
+		</div>
+	</div>
+</aside> 
+
 <script>
 	// Side Menu Js
 	$(function() {
@@ -75,7 +86,7 @@
 
 // Search Box JS
 // Define suggested keywords
-	let availableKeyWords = [
+	/*let availableKeyWords = [
 		'html',
 		'css',
 		'javascript',
@@ -109,5 +120,5 @@
 
 		searchWrapper.classList.add('show-rj');
 		resultsWrapper.innerHTML = `<ul>${content}</ul>`;
-	}
+	}*/
 </script>
